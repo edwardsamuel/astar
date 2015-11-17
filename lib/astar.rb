@@ -12,7 +12,7 @@ module Astar
 
     def to(node)
       @to_node = Node.new(node,nil)
-      @open_list << Node.new(@from_node, @to_node)
+      @open_list << Node.new(@from_node.tile, @to_node)
       calculate_route
     end
 
